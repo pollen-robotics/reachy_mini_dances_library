@@ -9,11 +9,11 @@ authors = [{ name = "Pollen Robotics", email = "contact@pollen-robotics.com" }]
 description = ""
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-    "reachy_mini", # Not released yet (should be soon)
-    # "reachy_mini@git+ssh://git@github.com/pollen-robotics/reachy_mini@develop",
-]
+dependencies = ["reachy_mini"]
 
+
+[project.scripts]
+dance-demo = "reachy_mini_dances_library.dance_demo:main"
 
 [project.optional-dependencies]
 dev = ["pytest", "ruff==0.12.0"]
